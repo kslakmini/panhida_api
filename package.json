@@ -1,0 +1,38 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node app.js",
+    "lint": "eslint \"./src/**/*.js\" app.js  --fix",
+    "serve": "pm2 start ecosystem.config.js",
+    "prod": "node app.js"
+  },
+  "author": "pathum kalhan",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.5",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "cron": "^1.8.2",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "joi": "^17.4.2",
+    "joi-objectid": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "md5": "^2.3.0",
+    "moment": "^2.29.1",
+    "mongoose": "^5.13.4",
+    "morgan": "^1.10.0",
+    "randomstring": "^1.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "nodemon": "^2.0.12"
+  }
+}
