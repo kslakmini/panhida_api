@@ -24,7 +24,7 @@ const routes = require('./src/controllers/index');
 routes.forEach(([name, handler]) => app.use(`/${name}`, handler));
 
 const port = process.env.PORT;
-const connectionURI = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.jrlgx.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
+const connectionURI = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.2yzno8f.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 
 mongoose.connect(connectionURI, {
   useNewUrlParser: true,
